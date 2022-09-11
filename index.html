@@ -1,20 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Real Estate Landing</title>
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oma</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="js/tailwind.config.js"></script>
-</head>
-<body>
+  </head>
+  <body class="font-pop">
+    <!-- =====================
+           nav part start
+    ========================= -->
+    <nav class="bg-bannerbg absolute top-[63px] w-full">
+      <div class="container mx-auto">
+        <div class="flex items-center">
+          <div class="w-[30%]">
+            <picture>
+              <img src="images/Frame 2.png" alt="logo" />
+            </picture>
+          </div>
+          <div class="w-[70%]">
+            <ul class="flex gap-x-24 justify-end text-textColor text-base">
+              <li
+                class="after:bg-[#F6762E] after:content[''] hover:after:absolute relative after:h-[4px] after:w-[50%] after:bottom-[-5px] after:left-0 after:rounded after:translate-x-[50%] after:transition after:ease-in-out after:delay-1000 hover:font-bold"
+              >
+                Home<i class="fa-solid fa-angle-down ml-3"></i>
+              </li>
+              <li
+                class="after:bg-[#F6762E] after:content[''] hover:after:absolute relative after:h-[4px] after:w-[50%] after:bottom-[-5px] after:left-0 after:rounded after:translate-x-[50%] transition ease-in-out delay-1000 hover:font-bold"
+              >
+                About<i class="fa-solid fa-angle-down ml-3"></i>
+              </li>
+              <li
+                class="after:bg-[#F6762E] after:content[''] hover:after:absolute relative after:h-[4px] after:w-[50%] after:bottom-[-5px] after:left-0 after:rounded after:translate-x-[50%] transition ease-in-out delay-1000 hover:font-bold"
+              >
+                Properties<i class="fa-solid fa-angle-down ml-3"></i>
+              </li>
+              <li
+                class="after:bg-[#F6762E] after:content[''] hover:after:absolute relative after:h-[4px] after:w-[50%] after:bottom-[-5px] after:left-0 after:rounded after:translate-x-[50%] transition ease-in-out delay-1000 hover:font-bold"
+              >
+                Contact<i class="fa-solid fa-angle-down ml-3"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- =====================
+           nav part end
+    ========================= -->
 
-    <!--============= Residen part Start=================-->
+    <!-- =====================
+           banner part start
+    ========================= -->
+    <section class="bg-bannerbg pt-48 pb-16">
+      <div class="container mx-auto">
+        <div class="flex justify-between">
+          <div class="w-[64%]">
+            <h1
+              class="text-5xl font-semibold text-[#203239] leading-[56px] mb-6"
+            >
+              Temukan Hunian Keluarga Sesuai Keinginanmu
+            </h1>
+            <p class="text-[#2032398C] mb-14 text-base">
+              Menyediakan hunian bagi keluarga anda dengan varian pilihan dan
+              lokasi yang strategis di kota anda dengan cara yang lebih mudah.
+            </p>
+            <form action="#">
+              <div class="relative inline-block">
+                <input
+                  class="pl-10 w-[645px] text-base py-6 rounded-2xl"
+                  placeholder="Search location, properties, residental group"
+                  type="text"
+                />
+                <button
+                  class="absolute top-[50%] right-6 bg-[#203239] text-white py-3 px-10 rounded-xl translate-y-[-50%]"
+                >
+                  Search
+                </button>
+                <i
+                  class="fa-solid fa-location-dot absolute top-[50%] left-4 translate-y-[-50%]"
+                ></i>
+              </div>
+            </form>
+            <div class="box flex mt-14 gap-x-16">
+              <div class="one w-[149px]">
+                <h3 class="text-[#203239 ] text-5xl font-semibold">
+                  200<span class="text-[#FF7527]">+</span>
+                </h3>
+                <p class="text-[#203239 ] opacity-50 text-base">
+                  Residental grup telah bergabung
+                </p>
+              </div>
+              <div class="two w-[149px]">
+                <h3 class="text-[#203239 ] text-5xl font-semibold">
+                  10 <span class="text-[#FF7527]">+</span>
+                </h3>
+                <p class="text-[#203239 ] opacity-50 text-base">
+                  Sudah berpengalaman
+                </p>
+              </div>
+              <div class="three w-[149px]">
+                <h3 class="text-[#203239 ] text-5xl font-semibold">
+                  999<span class="text-[#FF7527]">+</span>
+                </h3>
+                <p class="text-[#203239 ] opacity-50 text-base">
+                  Residental grup telah bergabung
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="w-[36%]">
+            <img
+              class="w-full"
+              src="images/unsplash_ctUWE7BUEzEhoome.png"
+              alt="unsplash_ctUWE7BUEzEhoome.png"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================
+           banner part endd
+    ========================= -->
+    
+       <!--============= Residen part Start=================-->
     <section class="bg-background">
         <div class="max-w-container mx-auto">
             <div class="flex justify-between">
@@ -45,5 +164,40 @@
     </section>
     <!--============= Residen part End=================-->
     
-</body>
+    <!-- ======================
+        blog part start
+    ======================= -->
+    <section class="py-24">
+        <div class="container mx-auto">
+            <h3 class="text-orange font-medium font-pop text-base pb-5">Pilihan Auditor</h3>
+            <div class="flex justify-between pb-16">
+                <h2 class="text-4xl font-pop font-semibold text-black">Residen Berbagai Kota</h2>
+                <div><i class=" fa-solid fa-angle-left bg-gray border border-gray py-4 px-6 rounded-md text-orange text-xl mr-10"></i><i class="fa-solid fa-angle-right py-4 px-6 rounded-md border border-gray text-orange text-xl"></i></div>
+            </div>
+            <div class="flex justify-between">
+                <div class="w-[30%]">
+                    <img class="w-full" src="./images/blog-image-1.png" alt="blog_image">
+                    <h2 class="font-pop text-black font-medium text-2xl py-4">Magnolia Surabaya</h2>
+                    <p class="font-pop font-light text-black text-base">Jl. Gatot Subroto No.KM.6,8, RT.001/RW.008, Jatake ,Kota Tangerang, Kec. Jatiuwung, Kota Tangerang, Banten, Jatake  15136</p>
+                    
+                </div>
+                <div class="w-[30%]">
+                    <img class="w-full" src="./images/blog-image-2.png" alt="blog_image">
+                    <h2 class="font-pop text-black font-medium text-2xl py-4">Magnolia Surabaya</h2>
+                    <p class="font-pop font-light text-black text-base">Jl. Gatot Subroto No.KM.6,8, RT.001/RW.008, Jatake ,Kota Tangerang, Kec. Jatiuwung, Kota Tangerang, Banten, Jatake  15136</p>
+                    
+                </div>
+                <div class="w-[30%]">
+                    <img class="w-full" src="./images/blog-image-3.png" alt="blog_image">
+                    <h2 class="font-pop text-black font-medium text-2xl py-4">Magnolia Surabaya</h2>
+                    <p class="font-pop font-light text-black text-base">Jl. Gatot Subroto No.KM.6,8, RT.001/RW.008, Jatake ,Kota Tangerang, Kec. Jatiuwung, Kota Tangerang, Banten, Jatake  15136</p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ======================
+        blog part end
+    ======================= -->
+  </body>
 </html>
