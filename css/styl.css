@@ -1,0 +1,56 @@
+.flip-card_04 {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    border: 0px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  .flip-card_name {
+    font-weight:bold;
+    font-size:2.0rem;
+  }
+  
+  .flip-card-inner_04 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card_04:hover .flip-card-inner_04 {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front_04, .flip-card-back_04 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front_04 {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back_04 {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  
+  /* 反転した時の囲み枠 */
+  .cardbox1 {
+      padding: 2.0em 1em;
+      margin: 1em 2em;
+      font-weight: bold;
+      border: solid 3px #FFFFFF;
+  }
+  .cardbox1 p {
+      margin: 0; 
+      padding: 0;
+  }
