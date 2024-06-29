@@ -11,7 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/all.min.css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/animate.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/all.min.css"/>
+    <link rel="stylesheet" href="css/styl.css"/>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="js/tailwind.config.js"></script>
   </head>
@@ -48,7 +54,9 @@
               <li
                 class="after:bg-[#F6762E] after:content[''] hover:after:absolute relative after:h-[4px] after:w-[50%] after:bottom-[-5px] after:left-0 after:rounded after:translate-x-[50%] transition ease-in-out delay-1000 hover:font-semibold font-normal"
               >
-                Contact
+                <a href="#contact">
+                  Contact
+                </a>
               </li>
             </ul>
           </div>
@@ -255,13 +263,9 @@
             当ウェブサイトで提供されている物件は、有名な建築家と信頼できる建築士との協力の成果です。
             </p>
             <div class="flex md:flex-row flex-col gap-[20px] md:gap-[48px]">
-              <button
-                class="items-center gap-3 w-full md:w-[234px] h-[50px] font-pop font-semibold text-sm md:text-base text-dark leading-6 border border-solid border-dark rounded-[10px]"
-              >
-                <i class="fa-solid fa-phone w-6 h-6 mr-0 md:mr-[12px]"></i>お問い合わせはこちら
-              </button>
-              <button
-                class="items-center gap-2.5 w-full md:w-[251px] h-[50px] bg-dark font-pop font-semibold text-sm md:text-base text-white leading-6 rounded-[10px]"
+              <button  
+                onclick="loction.href='https://suumo.jp/chintai/kaisha/kc_030_175002020/'"
+                class="invite-button animate__animated items-center gap-2.5 w-full md:w-[251px] h-[50px] bg-dark font-pop font-semibold text-sm md:text-base text-white leading-6 rounded-[10px]"
               >
               より詳しい物件紹介
               </button>
@@ -292,6 +296,22 @@
               class="fa-solid fa-angle-right py-1 md:py-4 px-3 md:px-6 rounded-md border border-gray text-orange text-xl"
             ></i>
           </div>
+        </div>
+        <div id="sec">
+          <ul>
+            <li>
+              <span class="fa fa-code"></span>
+        
+              <p class="title01">タイトル1</p>
+              <p>この部分はダミーテキスト。この部分はダミーテキスト。この部分はダミーテキスト。この部分はダミーテキスト。この部分はダミーテキスト。この部分はダミーテキスト。この部分はダミーテキスト。この部分はダミーテキスト。</p>
+            </li>
+            <li>
+              <span class="fa fa-code"></span>
+        
+              <p class="title01">タイトル1</p>
+              <p>この部分はダミーテキスト。この部分はダミーテキスト。この部分はダミーテキスト。この部分はダミーテキスト。この部分はダミーテキスト。この部分はダミーテキスト。この部分はダミーテキスト。この部分はダミーテキスト。</p>
+            </li>
+          </ul>
         </div>
         <div class="flex justify-between flex-col md:flex-row">
           <div class="w-full md:w-[30%]">
@@ -348,7 +368,7 @@
     <section class="bg-background py-[48px]">
       <div class="container mx-auto px-3 md:px-0">
         <div class="flex md:flex-row flex-col justify-between">
-          <div class="w-full md:w-full lg:w-[60%]">
+          <div id="contact" class="w-full md:w-full lg:w-[60%]">
             <h2
               class="font-pop text-dark font-semibold text-2xl md:text-3xl leading-[150%]  mb-8 md:mb-16"
             >
@@ -387,7 +407,7 @@
               </div>
             </div>
               
-              <button class=" mx-auto text-center mb-6 block bg-orange  py-3 px-16 font-semibold text-base text-white rounded-xl">Email Now</button>
+              <button class="mail-button animate__animated mx-auto text-center mb-6 block bg-orange  py-3 px-16 font-semibold text-base text-white rounded-xl">Email Now</button>
               
               
               
