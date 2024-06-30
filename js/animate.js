@@ -12,10 +12,7 @@ function scrollAnimate(className){
     }
 }
 
-$(window).on('scroll', function(){
-    scrollAnimate(".invite-button")
-    scrollAnimate('.mail-button')
-});
+
 
 
 
@@ -38,8 +35,6 @@ function numberCounter(numberId, isInteger){
             initNum=initNum+0.3
         }
         
-
-        console.log(initNum, targetNum)
         if (initNum > targetNum) {
             target.innerHTML = targetNum
           clearInterval(counterData)
@@ -48,50 +43,38 @@ function numberCounter(numberId, isInteger){
     counterData = setInterval(countUp, speed)
 }
 
+function goToTop(){
+    $(window).scrollTop(0);
+
+}
+
+//スクロールすると上部に固定させるための設定を関数でまとめる
+function FixedAnime() {
+    var headerH = $('#header').outerHeight(true);
+    var scroll = $(window).scrollTop();
+    if (scroll >= headerH){//headerの高さ以上になったら
+        $('#header').addClass('fixed');//fixedというクラス名を付与
+      }else{//それ以外は
+        $('#header').removeClass('fixed');//fixedというクラス名を除去
+      }
+  }
+
+//ロード時
 $(function(){
     numberCounter("#price-number", true)
     numberCounter("#yield-number", false)
     numberCounter("#house-count-number", true)
+    FixedAnime();
+    $('#top-a').on('click', function(){
+        goToTop()
+    });
+});
+
+//スクロール時
+$(window).on('scroll', function(){
+    scrollAnimate(".invite-button")
+    scrollAnimate('.mail-button')
+    FixedAnime();
 });
 
 
-
-
-
-// const shuffleNumberCounter = (target) => {
-//     var targetNum = Number(target.getAttribute('date-id'))
-    
-//     console.log(targetNum,"aaaaaaaaaaaaaaaaaaa")
-//     if (!targetNum) {
-//       return
-//     }
-  
-//     let counterData = null
-//     const speed = 1000 / targetNum
-//     let initNum = 0
-  
-//     const countUp = () => {
-//       if (Number.isInteger(targetNum)) {
-//         target.innerHTML = initNum
-//       } else {
-//         target.innerHTML = `${initNum}.${Math.floor(Math.random() * 9)}`
-//       }
-  
-//       initNum++
-  
-//       if (initNum > targetNum) {
-//         target.innerHTML = targetNum
-//         clearInterval(counterData)
-//       }
-//     }
-    
-//     counterData = setInterval(countUp, speed)
-//   }
-  
-
-
-//   $(function(){
-//     var target = document.querySelector('#price-number');
-//     console.log(target)
-//     shuffleNumberCounter(target)
-// });

@@ -5,6 +5,9 @@
   text-align: center;
   word-wrap: break-word;
 }
+#sec img {
+  padding: 4px;
+}
 
 #sec ul {
   margin: 0;
@@ -15,8 +18,6 @@
   border: none;
 }
 #sec ul li {
-  padding: 40px;
-  width: 320px;
   transition: box-shadow 0.3s;
 }
 #sec ul li:hover {
@@ -43,33 +44,6 @@
 #sec ul li span:before, #sec ul li span:after {
   position: static;
 }
-#sec ul li .title01 {
-  color: #6f6f6f;
-  display: inline-block;
-  font-size: 24px;
-  font-weight: 100;
-  transition: color 0.3s;
-}
-#sec ul li .title01:after {
-  content: "";
-  position: relative;
-  left: 50%;
-  top: 20px;
-  transform: translateX(-50%);
-  display: block;
-  width: 40px;
-  height: 1px;
-  background: #6f6f6f;
-  transition: width 0.3s;
-}
-#sec ul li p {
-  color: #A2A2A2;
-  text-align: left;
-  text-indent: 1em;
-  font-size: 16px;
-  line-height: 26px;
-  transition: color 0.3s;
-}
 /* ボタンの背景 */
 .invite-button.bg-dark {
   --tw-bg-opacity: 1;
@@ -80,3 +54,25 @@
   background-color: rgb(36 251 4);
   width: 400px;
 }
+
+#header{
+  width:100%;/*横幅指定*/
+  /*以下はレイアウトのためのCSS*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background:#333; */
+  color:#fff;
+  text-align: center;
+}
+
+/*JSを使いfixedクラスが付与された際の設定*/
+#header.fixed{
+  position: fixed;/*fixedを設定して固定*/
+    z-index: 999;/*最前面へ*/
+    top:0;/*位置指定*/
+    left:0;/*位置指定*/
+    padding: 15px 0px;
+}
+
+

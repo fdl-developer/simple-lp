@@ -25,7 +25,7 @@
     <!-- =====================
            nav part start
     ========================= -->
-    <nav class="bg-bannerbg  absolute md:top-[63px] top-6 w-full">
+    <nav id="header" class="bg-bannerbg  absolute md:top-[63px] top-6 w-full">
       <div class="container mx-auto px-3">
         <div class="flex items-center justify-center">
           <div class="w-[30%]">
@@ -35,27 +35,33 @@
           </div>
           <div class="w-[70%] text-right ">
             <i class="fa-solid fa-bars block text-xl md:hidden "></i>
-            <ul class="md:flex hidden items-center gap-x-24 justify-end text-textColor text-base ">
+            <ul id="g-navi" class="md:flex hidden items-center gap-x-24 justify-end text-textColor text-base ">
               <li
                 class="after:bg-[#F6762E] after:content[''] hover:after:absolute relative after:h-[4px] after:w-[50%] after:bottom-[-5px] after:left-0 after:rounded after:translate-x-[50%] after:transition after:ease-in-out after:delay-1000 hover:font-semibold font-normal transition-opacity duration-500"
               >
-                Home
+              <a id="top-a" href="#">
+                トップ
+              </a>
               </li>
               <li
                 class="after:bg-[#F6762E] after:content[''] hover:after:absolute relative after:h-[4px] after:w-[50%] after:bottom-[-5px] after:left-0 after:rounded after:translate-x-[50%] transition ease-in-out delay-1000 hover:font-semibold font-normal"
               >
-                About
+              <a href="#juutaku">
+                住宅紹介
+              </a>
               </li>
               <li
                 class="after:bg-[#F6762E] after:content[''] hover:after:absolute relative after:h-[4px] after:w-[50%] after:bottom-[-5px] after:left-0 after:rounded after:translate-x-[50%] transition ease-in-out delay-1000 hover:font-semibold font-normal"
               >
-                Properties 
+              <a href="#kutikomi">
+                口コミ
+              </a>
               </li>
               <li
                 class="after:bg-[#F6762E] after:content[''] hover:after:absolute relative after:h-[4px] after:w-[50%] after:bottom-[-5px] after:left-0 after:rounded after:translate-x-[50%] transition ease-in-out delay-1000 hover:font-semibold font-normal"
               >
                 <a href="#contact">
-                  Contact
+                  お問い合わせ
                 </a>
               </li>
             </ul>
@@ -71,7 +77,7 @@
            banner part start
     ========================= -->
     <section class="bg-bannerbg pt-20 md:pt-48 pb-16">
-      <div class="container mx-auto px-3">
+      <div id="top-page" class="container mx-auto px-3">
         <div class="flex justify-between flex-col md:flex-row lg:flex-row ">
           <div class="w-full md:w-[64%] lg:w-full text-center md:text-left order-1">
             <h1 class="text-3xl md:text-5xl font-semibold text-[#203239] leading-[56px] mb-6">
@@ -263,7 +269,7 @@
         blog part start
     ======================= -->
     <section class="md:py-24 py-16">
-      <div class="container mx-auto px-3 md:px-0">
+      <div id="juutaku" class="container mx-auto px-3 md:px-0">
         <h3 class="text-orange font-medium font-pop text-base pb-5">
          住宅紹介
         </h3>
@@ -271,71 +277,65 @@
           <h2 class="text-xl md:text-4xl font-pop font-semibold text-black">
             複数の都市にある住居
           </h2>
-          <div class="text-center md:text-left mt-5 md:mt-0">
-            <i
-              class="fa-solid fa-angle-left bg-gray border border-gray py-1 md:py-4 px-3 md:px-6 rounded-md text-orange text-xl mr-10"
-            ></i
-            ><i
-              class="fa-solid fa-angle-right py-1 md:py-4 px-3 md:px-6 rounded-md border border-gray text-orange text-xl"
-            ></i>
-          </div>
-        </div>
-        <div id="sec">
-          <ul>
-            <li>
-              <span class="fa fa-code"></span>
-        
-              <p class="title01">タイトル1</p>
-              <p>この部分はダミーテキスト。この部分はダミーテキスト。この部分はダミーテキスト。この部分はダミーテキスト。この部分はダミーテキスト。この部分はダミーテキスト。この部分はダミーテキスト。この部分はダミーテキスト。</p>
-            </li>
-            <li>
-              <span class="fa fa-code"></span>
-        
-              <p class="title01">タイトル1</p>
-              <p>この部分はダミーテキスト。この部分はダミーテキスト。この部分はダミーテキスト。この部分はダミーテキスト。この部分はダミーテキスト。この部分はダミーテキスト。この部分はダミーテキスト。この部分はダミーテキスト。</p>
-            </li>
-          </ul>
         </div>
         <div class="flex justify-between flex-col md:flex-row">
           <div class="w-full md:w-[30%]">
+            <div id="sec">
+              <ul>
+                <li>
             <img
-              class="w-full"
+              class="fa fa-code w-full"
               src="./images/blog-image-1.png"
               alt="blog_image"
             />
-            <h2 class="font-pop text-black font-medium text-2xl py-4">
+            <h2 class="title01 font-pop text-black font-medium text-2xl py-4">
               マグノリア・スラバヤ
             </h2>
-            <p class="font-pop font-light text-black text-base">
+            <p class="title01 font-pop font-light text-black text-base">
               ガトット・スブロト通りKM.6.8番地、ジャタケ、タンゲラン市、ジャティウウン区、バンテン州、15136
             </p>
+          </li>
+        </ul>
+      </div>
           </div>
           <div class="w-full md:w-[30%] mt-5 md:mt-0
           ">
+          <div id="sec">
+          <ul>
+            <li>
             <img
-              class="w-full"
+              class="fa fa-code w-full"
               src="./images/blog-image-2.png"
               alt="blog_image"
             />
-            <h2 class="font-pop text-black font-medium text-2xl py-4">
+            <h2 class="title01 font-pop text-black font-medium text-2xl py-4">
               マグノリア・スラバヤ
             </h2>
-            <p class="font-pop font-light text-black text-base">
+            <p class="title01 font-pop font-light text-black text-base">
               ガトット・スブロト通りKM.6,8番地、ジャタケ、タンゲラン市、ジャティウウン区、バンテン州、ジャタケ15136
             </p>
+          </li>
+        </ul>
+      </div>
           </div>
           <div class="w-full md:w-[30%] mt-5 md:mt-0">
+            <div id="sec">
+              <ul>
+                <li>
             <img
-              class="w-full"
+              class="fa fa-code w-full"
               src="./images/blog-image-3.png"
               alt="blog_image"
             />
-            <h2 class="font-pop text-black font-medium text-2xl py-4">
+            <h2 class="title01 font-pop text-black font-medium text-2xl py-4">
               マグノリア・スラバヤ
             </h2>
-            <p class="font-pop font-light text-black text-base">
+            <p class="title01 font-pop font-light text-black text-base">
               ガトット・スブロト通りKM.6,8番地、ジャタケ、タンゲラン市、ジャティウウン区、バンテン州、15136
             </p>
+          </li>
+        </ul>
+      </div>
           </div>
         </div>
       </div>
@@ -344,7 +344,153 @@
     <!-- ======================
         blog part end
     ======================= -->
+    <section class="bg-bannerbg pt-20 md:pt-48 pb-16">
+      <div class="container mx-auto px-3">
+        <div class="flex justify-between flex-col md:flex-row lg:flex-row ">
+          <div class="w-full md:w-[64%] lg:w-full text-center md:text-left order-1">
+            <h1 class="text-3xl md:text-5xl font-semibold text-[#203239] leading-[56px] mb-6">
+             洗練された充実のデザイン！
+            </h1>
+            <p
+              class="text-[#2032398C] mb-6 text-base leading-9 font-light w-full lg-w-[544px]">
+              お客様の要望に合わせ住宅から賃貸等、幅広く柔軟に対応させていただきます。
+            </p>
+            <div class="flex justify-between items-center flex-col md:flex-wrap md:flex-row ml-0 xl:ml-[72px] md:ml-0 mt-9 md:mt-[84px]"></div>
+            <div class="box flex mt-14 gap-x-5 flex-col md:flex-row">
+              <div
+              class="md:w-[30%] h-siz-fit hover:border hover:border-solid hover:border-[#EEEDDE] border-transparent border border-solid"
+              >
+                <img 
+                class="w-full"
+                src="images/tawamann.png"
+                />
+              </div>
+                <div
+                class="md:w-[30%] h-siz-fit hover:border hover:border-solid hover:border-[#EEEDDE] border-transparent border border-solid"
+                >
+                  <img
+                  class="w-full"
+                  src="images/naisou2.png"
+                  />
+                  <img
+                  class="w-full"
+                  src="images/naisou4.png"
+                  />
+                </div>
+                  <div
+                  class="md:w-[30%] h-siz-fit hover:border hover:border-solid hover:border-[#EEEDDE] border-transparent border border-solid"
+                  >
+                    <img
+                    class="w-full"
+                    src="images/naisou3.png"
+                    />
+                    <img
+                    class="w-full"
+                    src="images/naisou5.png"
+                    />
+                  </div>
+                
+              </div>
+          </div>
+          <div class=" w-full mt-5 md:mt-0 md:w-[30%] lg:[36%] order-2">
+            <h2 class="font-pop text-black font-medium text-2xl py-4">弊社の不動産サービス</h2>
+            <p>私たちの不動産サービスは、お客様のニーズに合わせた幅広い物件をご用意しています。賃貸アパートから一戸建て住宅、不動産投資まで、多岐にわたる物件を取り扱っております。</p>
+            <h2 class="font-pop text-black font-medium text-2xl py-4">賃貸物件</h2>
+            <p>快適で利便性の高い賃貸物件を多数取り揃えております。都市部のアクセスが良いマンションから、静かな住宅街の一戸建てまで、幅広い選択肢を提供いたします。</p>
+            <h2 class="font-pop text-black font-medium text-2xl py-4">一戸建て住宅</h2>
+            <p>家族の成長やライフスタイルに合わせた一戸建て住宅をご提案。デザイン性と機能性を兼ね備えた住まいで、快適な生活をお約束します。</p>
+            <h2 class="font-pop text-black font-medium text-2xl py-4">不動産投資</h2>
+            <p>将来の資産形成を見据えた不動産投資もお任せください。市場分析から物件選定、購入後の管理まで、専門的なサポートを提供いたします。お客様の夢を形にするため、全力でサポートいたします。まずはお気軽にお問い合わせください。あなたに最適な物件を一緒に見つけましょう。</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- =====================
+           banner part endd
+    ========================= -->
+
+    <!-- =====================
+           service part start
+    ========================= -->
+
+    <section class="mt-14 md:my-28 ">
+      <div id="kutikomi" class="container mx-auto md:px-0 px-3">
+        <h1
+          class="font-pop font-semibold text-black text-3xl w-full md:w-[500px] ml-0 md:ml-0 xl:ml-[100px] md:text-left text-center "
+        >
+        弊社で物件を購入していただいたお客様の声
+        </h1>
+        <div class="flex justify-between items-center flex-col md:flex-wrap md:flex-row ml-0 xl:ml-[72px] md:ml-0 mt-9 md:mt-[84px]">
+          <div
+            class="md:w-[30%] hover:border hover:border-solid hover:border-[#EEEDDE] border-transparent border border-solid"
+          >
+          <img
+          class="w-full"
+          src="images/dannsei.jpg"
+        />
+
+            <h3
+              class="font-pop font-medium text-black text-base ml-[33px] mt-5 relative after:absolute after:top-0 after:left-[-25px] after:h-full after:rounded-lg after:w-2 after:content-[''] after:bg-[orange]"
+            >
+            K・M 様
+              <span
+                class="font-pop font-medium text-orange text-base pl-[132px]"
+                >01</span
+              >
+            </h3>
+            <p
+              class="font-pop font-light text-black text-base ml-[33px] pt-2"
+            >
+            引っ越しの際にこの不動産会社を利用しました。最初から最後までとても親切に対応してくれて、私たちの希望をしっかりと聞いてくれました。特に印象に残ったのは、内見の際に細かな部分まで丁寧に説明してくれたことです。契約手続きもスムーズで、安心して新しい生活をスタートすることができました。スタッフのプロ意識にも感動しました。また引っ越しする際も、ぜひお願いしたいと思います。
+            </p>
+          </div>
+          <div
+            class="md:w-[30%] hover:border hover:border-solid hover:border-[#EEEDDE] border-transparent border border-solid"
+          >
+          <img
+          class="w-full"
+          src="images/dannsei2.jpg"
+          />
+          <h3
+          class="font-pop font-medium text-black text-base ml-[33px] mt-5 relative after:absolute after:top-0 after:left-[-25px] after:h-full after:rounded-lg after:w-2 after:content-[''] after:bg-[orange]"
+          >T・S様
+            
+              <span
+                class="font-pop font-medium text-orange text-base pl-[100px]"
+                >02</span
+              >
+            </h3>
+            <p
+              class="font-pop font-light text-black text-base ml-[33px] pt-2 mb-7"
+            >
+            不動産投資を考えていた際にこの不動産会社を利用しました。担当者の方が非常に知識豊富で、市場の動向や将来性について詳しく説明してくれました。紹介された物件も利回りが良く、期待以上の成果を上げることができました。購入後の管理についてもサポートがしっかりしており、安心して任せることができています。不動産投資を考えている方にはおすすめです。
+            </p>
+          </div>
+          <div
+            class="md:w-[30%] hover:border hover:border-solid hover:border-[#EEEDDE] border-transparent border border-solid"
+          >
+            <img
+            class="w-full"
+            src="images/dannsei3.jpg"
+            />
+            <h3
+              class="font-pop font-medium text-black text-base ml-[33px] mt-5 relative after:absolute after:top-0 after:left-[-25px] after:h-full after:w-2 after:content-[''] after:rounded-lg after:bg-[orange]"
+            >
+            S・Y 様
+              <span class="font-pop font-medium text-orange text-base pl-[84px]"
+                >03</span
+              >
+            </h3>
+            <p
+              class="font-pop font-light text-black text-base ml-[33px] pt-2 "
+            >
+            賃貸物件の管理をお願いしているのですが、大変満足しています。入居者の募集から契約手続き、日常のトラブル対応まで全てお任せできるので、とても助かっています。特に、入居者の募集時には迅速に対応してくれて、空室期間が短く済みました。また、トラブルが発生した際も迅速に解決してくれるので、オーナーとして非常に安心です。丁寧な対応が嬉しいです。これからも長くお付き合いしたい不動産会社です。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- ======================
         footer-top part start
     ======================= -->
@@ -385,6 +531,8 @@
         </div>
       </div>
     </section>
+
+
     <!-- ======================
         footer-top part end
     ======================= -->
@@ -409,6 +557,8 @@
         </div>
       </div>
     </section>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="js/5-1-5.js"></script>
     <!-- ======================
         footer-bottom part start
     ======================= -->
