@@ -45,16 +45,24 @@
   position: static;
 }
 /* ボタンの背景 */
-.invite-button.bg-dark {
-  --tw-bg-opacity: 1;
-  background-color: rgb(36 251 4);
-  width: 400px;
+@media(min-width: 768px) {
+  #media-button.mail-button{
+    background-color: rgb(36 251 4);
+    width: 400px;
+  }
+  #media-button.invite-button{
+    background-color: rgb(36 251 4);
+    width: 400px;
+  }
 }
-.mail-button.bg-orange{
-  background-color: rgb(36 251 4);
-  width: 400px;
+@media (max-width: 767px) {
+  #media-button.invite-button{
+    background-color: rgb(36 251 4);
+  }
+  #media-button.mail-button{
+    background-color: rgb(36 251 4);
+  }
 }
-
 #header{
   width:100%;/*横幅指定*/
   /*以下はレイアウトのためのCSS*/
